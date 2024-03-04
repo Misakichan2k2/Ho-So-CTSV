@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hồ Sơ - Hust</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <section class="info-text">
+    <div class="left">
+      <div class="left-first">
+        <div class="left-first-header">
+          <img src="background.png" alt="Avatar" />
+        </div>
+        <div class="left-first-body">
+          <div class="info-item">MS: 20211007</div>
+          <div class="info-item">Họ tên: Sida OUPHASAKDA</div>
+          <div class="info-item">Lớp: Khoa học máy tính 06-k66</div>
+          <div class="info-item">Email: ouphasakda.s211007@sis.hust.edu.vn</div>
+          <div class="info-item">Email cá nhân: sida.opsd@gmail.com</div>
+        </div>
+        <div class="avatar">
+          <img src="photo.jpg" alt="Avatar" />
+        </div>
+      </div>
+      <div class="left-second">
+        <div class="tab">
+          <button class="tab-button" onclick="showTabLeft('trangthai')">
+            Trạng thái
+          </button>
+          <button class="tab-button" onclick="showTabLeft('quanly')">
+            Quản lý
+          </button>
+        </div>
+        <div class="table-left" id="trangthai">
+          <div>
+            <p>
+              Trạng thái học tập: <span style="color: rgb(64, 151, 144); font-weight: 700">Học</span>
+            </p>
+            <p>CPA: 3.33</p>
+            <p>Nợ: 0 TC</p>
+            <p>Tích lũy: 88 TC</p>
+            <p>Mức cảnh cáo: M0</p>
+            <p>Trình độ: 3</p>
+          </div>
+        </div>
+
+        <div class="table-left" id="quanly"></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="tab">
+        <button class="tab-button" onclick="showTabRight('lylich')">
+          Lý lich
+        </button>
+        <button class="tab-button" onclick="showTabRight('quyetdinh')">
+          Quyết định
+        </button>
+        <button class="tab-button" onclick="showTabRight('khenthuong')">
+          Khen thưởng
+        </button>
+        <button class="tab-button" onclick="showTabRight('lienhe')">
+          Liên hệ
+        </button>
+        <button class="tab-button" onclick="showTabRight('Nhanxet')">
+          Nhận xét
+        </button>
+        <button class="tab-button" onclick="showTabRight('hoatdongthamgia')">
+          Hoạt động tham gia
+        </button>
+      </div>
+      <div class="table-right" id="lylich">
+        <h1 class="section-heading">Thông tin cá nhân</h1>
+        <div class="headingInfo">
+          <div class="info">
+            <span>Ngày sinh: 05/03/2003</span>
+            <span>Nơi sinh: Lào</span>
+            <span>Giới tính: Nữ</span>
+          </div>
+          <div class="info">
+            <span>Số CMTND: 1234567890</span>
+            <span>Nơi cấp: Lào</span>
+            <span>Ngày cấp: 01/01/2018</span>
+          </div>
+          <div class="info">
+            <span>Dân tộc: Lào</span>
+            <span>Tôn giáo: phật giáo</span>
+            <span>Chi đoàn:</span>
+          </div>
+          <div class="info">
+            <span>Ngày vào đoàn:</span>
+            <span>Ngày vào Đảng:</span>
+            <span>Đoàn viên</span>
+          </div>
+          <div class="info">
+            <span>Đối tượng chính sách:</span>
+          </div>
+          <div class="info">
+            <span>Số thẻ bảo hiểm: 1234567890</span>
+          </div>
+          <div style="line-height: 1.5;">
+            <span>Địa chỉ thường trú: Bách Khoa, Hai Bà Trưng, Hà Nội, Việt Nam</span>
+          </div>
+          <div style="line-height: 1.5;">
+            <span>Nơi ở hiện tại: Bách Khoa, Hai Bà Trưng, Hà Nội, Việt Nam</span>
+          </div>
+        </div>
+
+        <h1 class="section-heading">Thông tin gia đình</h1>
+        <div class="familyInfo">
+          <div class="headingInfo">
+            <div style="font-weight: 700; line-height: 1.5">
+              <span>Họ và tên cha: Nguyễn Văn A</span>
+            </div>
+            <div class="info">
+              <span>Dân tộc: Lào</span>
+              <span>Năm sinh: 1970</span>
+              <span>Quốc tịch: Lào</span>
+            </div>
+            <div class="info">
+              <span>Nơi làm việc: Lào</span>
+              <span>Tôn giáo: Lào</span>
+              <span>Nghề Nghệp: Kỹ sư</span>
+            </div>
+            <div style="line-height: 1.5;">
+              <span>Địa chỉ thường trú: Savannakhet, Lào</span>
+            </div>
+            <div style="line-height: 1.5;">
+              <span>Liên hệ: +8562012345678</span>
+            </div>
+          </div>
+
+          <div class="headingInfo">
+            <div style="font-weight: 700; line-height: 1.5">
+              <span>Họ và tên cha: Nguyễn Thị B</span>
+            </div>
+            <div class="info">
+              <span>Dân tộc: Lào</span>
+              <span>Năm sinh: 1971</span>
+              <span>Quốc tịch: Lào</span>
+            </div>
+            <div class="info">
+              <span>Nơi làm việc: Lào</span>
+              <span>Tôn giáo: Lào</span>
+              <span>Nghề Nghệp: Buôn bán</span>
+            </div>
+            <div style="line-height: 1.5;">
+              <span>Địa chỉ thường trú: Savannakhet, Lào</span>
+            </div>
+            <div style="line-height: 1.5;">
+              <span>Liên hệ: +8562012345678</span>
+            </div>
+          </div>
+
+          <div class="headingInfo" style="font-weight: 700; line-height: 2">
+            <div>
+              <span>Thông tin người thân khác</span>
+            </div>
+            <div class="otherInfo">
+              <span>Thuộc hộ:</span>
+              <span>Số sổ:</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" table-right" id="quyetdinh"></div>
+      <div class="table-right" id="khenthuong"></div>
+      <div class="table-right" id="lienhe"></div>
+      <div class="table-right" id="Nhanxet"></div>
+      <div class="table-right" id="hoatdongthamgia"></div>
+
+    </div>
+  </section>
+
+  <!-- Chart -->
+  <div style="margin: 2rem">
+    <div class="chartText">
+      <span>Biểu đồ học tập</span>
+    </div>
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+    <div class="chartText">
+      <span>Biểu đồ rèn luyện</span>
+    </div>
+    <div class="chart-container">
+      <canvas id="myChartRenLuyen"></canvas>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
